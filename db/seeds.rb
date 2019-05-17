@@ -12,22 +12,22 @@ puts 'Wiping entire DB'
 Cocktail.destroy_all
 Ingredient.destroy_all
 
-puts 'Adding cocktails...'
-one = Cocktail.new(name: "Alex's vegan protein shake")
-one.remote_photo_url = img_url
-one.save
-two = Cocktail.new(name: "Joe's cup of joe")
-two.remote_photo_url = img_url
-two.save
-three = Cocktail.new(name: "Marc's ice tea")
-three.remote_photo_url = img_url
-three.save
+# puts 'Adding cocktails...'
+# one = Cocktail.new(name: "Alex's vegan protein shake")
+# one.remote_photo_url = img_url
+# one.save
+# two = Cocktail.new(name: "Joe's cup of joe")
+# two.remote_photo_url = img_url
+# two.save
+# three = Cocktail.new(name: "Marc's ice tea")
+# three.remote_photo_url = img_url
+# three.save
 
 
-puts 'Adding ingredients...'
-Ingredient.create(name: "Peas")
-Ingredient.create(name: "Coffee")
-Ingredient.create(name: "Ice")
-Ingredient.create(name: "Chocolate chips")
+# puts 'Adding ingredients...'
+# Ingredient.create(name: "Peas")
+# Ingredient.create(name: "Coffee")
+# Ingredient.create(name: "Ice")
+# Ingredient.create(name: "Chocolate chips")
 
-puts 'Seeding done'
+# puts 'Seeding done'
