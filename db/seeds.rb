@@ -9,7 +9,7 @@
 img_url = 'https://source.unsplash.com/random?cocktail'
 
 puts 'Wiping entire DB'
-Cocktail.destroy_all
+# Cocktail.destroy_all
 Ingredient.destroy_all
 
 # puts 'Adding cocktails...'
@@ -24,10 +24,18 @@ Ingredient.destroy_all
 # three.save
 
 
-# puts 'Adding ingredients...'
-# Ingredient.create(name: "Peas")
-# Ingredient.create(name: "Coffee")
-# Ingredient.create(name: "Ice")
-# Ingredient.create(name: "Chocolate chips")
+puts 'Adding ingredients...'
+Ingredient.create(name: "Peas")
+Ingredient.create(name: "Coffee")
+Ingredient.create(name: "Ice")
+Ingredient.create(name: "Chocolate")
+Ingredient.create(name: "Vodka")
+Ingredient.create(name: "Gin")
+Ingredient.create(name: "Rum")
+Ingredient.create(name: "Coke")
+Ingredient.create(name: "Red bull")
+Ingredient.create(name: "Water")
+Ingredient.create(name: "Beer")
+Ingredient.create(name: "Champagne")
 
-# puts 'Seeding done'
+puts 'Seeding done'
