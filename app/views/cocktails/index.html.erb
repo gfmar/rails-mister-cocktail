@@ -1,14 +1,36 @@
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://img.huffingtonpost.com/asset/5a4bc8b31d000027005c1e57.jpeg?cache=MSUWDop9KO&ops=1910_1000);">
+  <div class="container">
+    <h1>Fmar cocktails bring joy to all people</h1>
+    <p>Change your life and learn to drink cocktails by accessing one of our servers around the world.</p>
+    <!-- <a class="btn btn-primary" href="#">Apply now</a> -->
+  </div>
+</div>
+
+
+
 <div class="container mt-3">
 
-  <h1>Cocktails</h1>
+<!--   <h1>Cocktails</h1>
+ -->
 
-  <% @cocktails.each do |cocktail| %>
-    <p> <%= link_to "#{cocktail.name}", cocktail_path(cocktail)  %> </p>
-  <% end %>
+  <div class="cards">
+    <% @cocktails.each do |cocktail| %>
 
+      <%= link_to cocktail_path(cocktail) do %>
+
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path(cocktail.photo) %>)">
+        <%= cocktail.name %>
+      </div>
+
+
+      <% end %>
+    <% end %>
+  </div>
 
   <br>
   <p><%= link_to "Add a new cocktail", new_cocktail_path, class: "btn btn-primary" %></p>
+
 
 
 </div>
