@@ -13,7 +13,7 @@ Cocktail.destroy_all
 Ingredient.destroy_all
 
 puts 'Adding cocktails...'
-one = Cocktail.new(name: "Alex's gross protien vegan chocolate shake")
+one = Cocktail.new(name: "Alex's gross protein vegan chocolate shake")
 one.remote_photo_url = img_url
 one.save
 two = Cocktail.new(name: "Joe's cup of joe")

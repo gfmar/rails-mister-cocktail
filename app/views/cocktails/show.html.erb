@@ -17,7 +17,7 @@
         <td> <%= dose.amount %> </td>
         <td> <%= dose.description %> </td>
         <td> <%= link_to "Edit", edit_cocktail_dose_path(@cocktail, dose) %> </td>
-        <td> Delete </td>
+        <td> <%= link_to "Delete", dose_path(dose), method: :delete %> </td>
       </tr>
     <% end %>
 
