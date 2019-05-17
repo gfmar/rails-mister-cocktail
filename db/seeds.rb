@@ -13,12 +13,15 @@ Cocktail.destroy_all
 Ingredient.destroy_all
 
 puts 'Adding cocktails...'
-one = Cocktail.create(name: "Alex's gross protien vegan chocolate shake")
+one = Cocktail.new(name: "Alex's gross protien vegan chocolate shake")
 one.remote_photo_url = img_url
-two = Cocktail.create(name: "Joe's cup of joe")
+one.save
+two = Cocktail.new(name: "Joe's cup of joe")
 two.remote_photo_url = img_url
-three = Cocktail.create(name: "Marc's ice tea")
+two.save
+three = Cocktail.new(name: "Marc's ice tea")
 three.remote_photo_url = img_url
+three.save
 
 
 puts 'Adding ingredients...'
